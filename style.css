@@ -1,0 +1,34 @@
+:root{--accent:#0f766e}
+body{font-family:Inter,system-ui,sans-serif}
+.font-display{font-family:Fraunces,Georgia,serif}
+.accent-text{color:var(--accent)}
+.btn{background:var(--accent);color:#fff;padding:.55rem 1rem;border-radius:.6rem;font-weight:600;transition:filter .15s}
+.btn:hover{filter:brightness(1.1)}
+.btn-ghost{border:1px solid #d6d3d1;padding:.35rem .7rem;border-radius:.5rem;font-size:.8rem;background:#fff}
+.btn-danger{color:#b91c1c;border-color:#fecaca}
+.ctl{border:1px solid #d6d3d1;border-radius:.6rem;padding:.5rem .7rem;background:#fff;width:100%;min-width:0}
+.ctl:focus,.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header .ctl{width:auto}
+.navlink{padding:.4rem .8rem;border-radius:.5rem}
+.navlink.active{background:var(--accent);color:#fff}
+.hero{background:linear-gradient(120deg,rgba(15,23,42,.78),rgba(15,23,42,.35)),var(--accent) url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=70) center/cover}
+.card{background:#fff;border:1px solid #e7e5e4;border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+.card img{height:176px;width:100%;object-fit:cover;background:#e7e5e4}
+.chip{display:inline-block;font-size:.7rem;padding:.15rem .5rem;border-radius:99px;background:#f5f5f4}
+.s-pending{background:#fef3c7;color:#92400e}.s-confirmed{background:#d1fae5;color:#065f46}.s-cancelled{background:#fee2e2;color:#991b1b}
+.map{position:relative;min-height:300px;border-radius:1rem;border:1px solid #e7e5e4;background:radial-gradient(circle at 30% 40%,#ccfbf1,#e7e5e4 70%)}
+.pin{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;font-size:.75rem;font-weight:600}
+.pin i{color:var(--accent);font-size:1.6rem;filter:drop-shadow(0 2px 2px rgba(0,0,0,.3))}
+.pin.on i{animation:bounce .6s ease 2}
+.modal-box{animation:rise .25s ease}
+@keyframes rise{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@keyframes bounce{50%{transform:translateY(-8px)}}
+.toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#1c1917;color:#fff;padding:.6rem 1rem;border-radius:.6rem;z-index:50}
+table{width:100%;font-size:.85rem;border-collapse:collapse}
+th,td{padding:.5rem;text-align:start;border-bottom:1px solid #e7e5e4;vertical-align:middle}
+.tablewrap{overflow-x:auto;background:#fff;border:1px solid #e7e5e4;border-radius:.8rem}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal div{min-height:44px;border:1px solid #e7e5e4;border-radius:.4rem;padding:2px 4px;font-size:.7rem;background:#fff}
+.cal .has{background:color-mix(in srgb,var(--accent) 18%,white);font-weight:600}
+[dir=rtl] .fa-arrow-right{transform:scaleX(-1)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
